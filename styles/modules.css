@@ -81,3 +81,36 @@
   }
 
 }
+
+.logo{
+  background-image: url(../img/logo.png);
+      float: left;
+      width: 170px;
+      background-repeat: no-repeat;
+      background-size: 50px;
+      padding-left: 59px;
+      height: 39px;
+      padding-top: 19px;
+      background-color: #4a4a4a;
+}
+
+.book-view{
+  padding: 50px;
+}
+
+.item{
+  background-image: url(../img/book-image.png);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  height: 400px;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.book-info{
+  position: absolute;width:90%;bottom:0;
+  background-color: #4a4a4a;
+  color: #9b9b9b;
+  padding: 1% 5%;
+}

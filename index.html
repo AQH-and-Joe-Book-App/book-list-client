@@ -9,26 +9,33 @@
     <script type="text/x-handlebars-template" id="error-template">
       <p>{{status}}: {{statusText}}</p>
     </script>
-    <link rel="stylesheet" href="vendor/styles/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="vendor/styles/reset.css">
+        <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/layout.css">
     <link rel="stylesheet" href="styles/modules.css">
     <script type="text/x-handlebars-template" id="book-template">
-      <li class="-item">
+      <div class="item">
+
+
+
+        <div class="book-info">
         <h4>{{title}}</h4>
         <p>{{author}}</p>
         <p>{{isbn}}</p>
         <p>{{image_url}}</p>
         <p>{{description}}</p>
-
-      </li>
+        </div>
+      </div>
     </script>
 
   </head>
   <body>
     <header>
-      <h1>My Library</h1>
+<div class="logo">Books App</div>
+
     </header>
     <main>
       <section class="error-view container">
@@ -37,8 +44,8 @@
       </section>
 
       <section class="book-view container">
-        <h3>My Books</h3>
-          <ul id="book-list"></ul>
+        <u>my books</u>
+          <div id="book-list"></div>
         </section>
       </section>
     </main>
