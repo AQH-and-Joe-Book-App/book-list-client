@@ -32,7 +32,7 @@ address {
 
 a, a:link, a:active {
   text-decoration: none;
-  color: #777;
+  color: #f9f9f9;
 }
 
 a:hover, a:focus {
@@ -79,15 +79,17 @@ input:valid, textarea:valid {
 }
 
 body{
-background: #d8d8d8;
-font-family: 'Montserrat', sans-serif;
+background: #edefcb;
+font-family: 'Slabo 27px', serif;
+
 
 }
 
 
 header{
-  background-color: #4a4a4a;
-      padding: 30px 30px 0;
-      color: #9b9b9b;
-      height: 82px;
+  background-color: #2c55b5;
+  padding: 30px 30px 0;
+  color: #d1d4b4;
+  height: 82px;
+  border-bottom: 6px solid white;
 }

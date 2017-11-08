@@ -9,8 +9,9 @@
     <script type="text/x-handlebars-template" id="error-template">
       <p>{{status}}: {{statusText}}</p>
     </script>
-    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-    <link rel="stylesheet" href="vendor/styles/reset.css">
+    <link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+
+    <!-- <link rel="stylesheet" href="vendor/styles/reset.css"> -->
         <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/icons.css">
     <link rel="stylesheet" href="styles/base.css">
@@ -24,9 +25,9 @@
         <div class="book-info">
         <h4>{{title}}</h4>
         <p>{{author}}</p>
-        <p>{{isbn}}</p>
+        <!-- <p>{{isbn}}</p>
         <p>{{image_url}}</p>
-        <p>{{description}}</p>
+        <p>{{description}}</p> -->
         </div>
       </div>
     </script>
@@ -34,6 +35,13 @@
   </head>
   <body>
     <header>
+
+
+      <nav>
+        <ul>
+          <li><a href="#">about</a></li>
+        </ul>
+      </nav>
 <div class="logo">Books App</div>
 
     </header>
@@ -44,7 +52,7 @@
       </section>
 
       <section class="book-view container">
-        <u>my books</u>
+        <span class="book-count"></span>
           <div id="book-list"></div>
         </section>
       </section>
@@ -54,6 +62,7 @@
 
     <script src="./scripts/models/book.js" type="text/javascript"></script>
     <script src="./scripts/views/book-view.js" type="text/javascript"></script>
+    <script src="./scripts/views/about-view.js" type="text/javascript"></script>
     <script src="./scripts/views/error-view.js" type="text/javascript"></script>
   </body>
 </html>

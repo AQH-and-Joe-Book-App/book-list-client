@@ -84,34 +84,88 @@
 
 .logo{
   background-image: url(../img/logo.png);
-      float: left;
-      width: 170px;
-      background-repeat: no-repeat;
-      background-size: 50px;
-      padding-left: 59px;
-      height: 39px;
-      padding-top: 19px;
-      background-color: #4a4a4a;
+  float: left;
+  width: 170px;
+  background-repeat: no-repeat;
+  background-size: 50px;
+  padding-left: 59px;
+  height: 39px;
+  padding-top: 10px;
+
 }
 
 .book-view{
   padding: 50px;
+  padding-top: 30px;
 }
 
 .item{
   background-image: url(../img/book-image.png);
-  background-size: 100%;
+  background-size: 100% 100%;
   background-repeat: no-repeat;
-  height: 400px;
-  width: 400px;
+  height: 230px;
+  width: 19%;
   position: relative;
   margin-top: 30px;
   margin-bottom: 30px;
+  float: left;
+  margin-right: 20px;
 }
 
 .book-info{
-  position: absolute;width:90%;bottom:0;
-  background-color: #4a4a4a;
-  color: #9b9b9b;
+  position: absolute;
+  width: 90%;
+  bottom: 0;
+  background-color: #b1e9ff;
+  color: #731a1a;
   padding: 1% 5%;
+  border-top: 1px solid black;
+  border-bottom: 1px solid black;
+
+
+}
+
+
+.book-info h4{
+  margin-bottom: 0;
+  font-style: italic;
+}
+
+.book-info p{
+  margin-top: 5px;
+}
+
+header nav{
+  float: right;
+
+}
+
+header ul{
+  list-style-type: none;
+  display: inline-block;
+}
+
+.book-count{
+  font-size: 30px;
+color: red;
+}
+
+
+
+
+@media screen and (max-width: 960px){
+
+.item{
+  background-image: url(../img/book-image.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  height: 230px;
+  width: 100%;
+  position: relative;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  float: left;
+  margin-right: 0;
+}
+
 }
