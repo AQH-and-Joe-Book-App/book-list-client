@@ -100,10 +100,9 @@
 }
 
 .item{
-  background-image: url(../img/book-image.png);
-  background-size: 100% 100%;
+  background-size: cover;
   background-repeat: no-repeat;
-  height: 230px;
+  height: 360px;
   width: 19%;
   position: relative;
   margin-top: 30px;
@@ -151,7 +150,19 @@ header ul{
 color: red;
 }
 
+.book-detail .item{
+  background-image: url(../img/book-image.png);
+      background-size: cover;
+      background-repeat: no-repeat;
+      height: 390px;
+      width: 20%;
+      position: relative;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      float: left;
+      margin-right: 20px;
 
+}
 
 
 @media screen and (max-width: 960px){
@@ -167,6 +178,12 @@ color: red;
   margin-bottom: 30px;
   float: left;
   margin-right: 0;
+}
+
+
+
+.book-detail .item{
+      width: 100%;
 }
 
 }

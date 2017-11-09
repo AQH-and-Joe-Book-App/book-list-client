@@ -25,7 +25,7 @@ bookView.initIndexPage = function(ctx) {
     bookView.initDetailPage = function(ctx) {
       resetView();
       $('.detail-view').show();
-      $('#book-detail').empty();
+      $('.book-detail').empty();
       let template = Handlebars.compile($('#book-detail-template').text());
       $('.book-detail').append(template(ctx));
     }
@@ -45,10 +45,36 @@ bookView.initIndexPage = function(ctx) {
           description: event.target.description.value,
 
         };
+        console.log(book);
           module.Book.create(book);
       })
 
     }
+
+
+    bookView.initUpdateFormPage = function() {
+      console.log('initUpdateFormPage');
+      let idfromurl = window.location.pathname.replace("/books/", "").replace('/update','');
+      resetView();
+      $('.update-view').show();
+      $('#update-form').on('submit', function(event){
+        event.preventDefault();
+
+        let book = {
+          book_id: idfromurl,
+          title: event.target.title.value,
+          author: event.target.author.value,
+          isbn: event.target.isbn.value,
+          image_url: event.target.image_url.value,
+          description: event.target.description.value,
+
+        };
+          console.log(book);
+          module.Book.update(book);
+      })
+
+    }
+
 
 module.bookView = bookView;
 })(app)
