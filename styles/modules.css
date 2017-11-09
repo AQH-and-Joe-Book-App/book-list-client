@@ -95,7 +95,7 @@
 }
 
 .book-view{
-  padding: 50px;
+  padding: 18px;
   padding-top: 30px;
 }
 
@@ -118,9 +118,10 @@
   bottom: 0;
   background-color: #b1e9ff;
   color: #731a1a;
-  padding: 1% 5%;
+  padding: 10px 5% 10px 5%;
   border-top: 1px solid black;
   border-bottom: 1px solid black;
+  height: 100px;
 
 
 }
