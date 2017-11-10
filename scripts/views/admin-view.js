@@ -21,13 +21,14 @@ adminView.initAdminPage = function(ctx){
   $('.admin-view').show();
 
   $('#admin-form').on('submit', function(event){
+
+
     event.preventDefault();
     let token = event.target.passphrase.value;
-
     if(token === localStorage.token){
-      // page(`/books/${ctx.params.book_id}/update`, (ctx) => app.Book.fetchOne(ctx, app.bookView.initUpdateFormPage(ctx)));
-      // page(`/books/:book_id/update`, (ctx) => app.Book.fetchOne(ctx, app.bookView.initUpdateFormPage(ctx)));
-      page(`/books/${ctx.params.book_id}/update`, (ctx.params.book_id) => app.Book.fetchOne(ctx.params.book_id, app.bookView.initUpdateFormPage(ctx.params.book_id)));
+      let currentBook = ctx.params.book_id;
+      app.bookView.initUpdateFormPage(ctx);
+
     }else{
       page('/');
     }
