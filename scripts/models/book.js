@@ -62,11 +62,12 @@ Book.deleteOne = (ctx, callback)  =>
       });
 
 
-Book.create = (book, callback) =>
+Book.create = (book, callback) => {
   $.post(`${__API_URL__}/api/v1/books`, book)
     .then(() => page('/'))
     .then(callback)
     .catch(errorCallback);
+  }
   module.Book = Book;
 
 

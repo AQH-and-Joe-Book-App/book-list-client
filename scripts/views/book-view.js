@@ -53,6 +53,7 @@ bookView.initIndexPage = function(ctx) {
 
 
     bookView.initUpdateFormPage = function(ctx) {
+      console.log('init update form page');
       console.log(ctx);
       resetView();
       $('.update-view').show();
