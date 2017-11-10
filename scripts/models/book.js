@@ -1,8 +1,8 @@
 'use strict';
 
 var app = app || {};
-var __API_URL__ = 'https://aqh-jw-booklist.herokuapp.com';
-// var __API_URL__ = 'http://localhost:3000';
+// var __API_URL__ = 'https://aqh-jw-booklist.herokuapp.com';
+var __API_URL__ = 'http://localhost:3000';
 
 (function(module) {
 
@@ -51,9 +51,9 @@ Book.deleteOne = (ctx, callback)  =>
 
 
   // ask about this
-  Book.update = (book) =>
+  Book.update = (ctx, book) =>
       $.ajax({
-          url: `${__API_URL__}/api/v1/books/${book.book_id}`, // your api url
+          url: `${__API_URL__}/api/v1/books/${ctx.params.book_id}`, // your api url
           method: 'PUT', // method is any HTTP method
           data: book, // data as js object
           success: function() {

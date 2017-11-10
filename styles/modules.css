@@ -151,7 +151,7 @@ color: red;
 }
 
 .book-detail .item{
-  background-image: url(../img/book-image.png);
+  /*background-image: url(../img/book-image.png);*/
       background-size: cover;
       background-repeat: no-repeat;
       height: 390px;
@@ -168,7 +168,7 @@ color: red;
 @media screen and (max-width: 960px){
 
 .item{
-  background-image: url(../img/book-image.png);
+  /*background-image: url(../img/book-image.png);*/
   background-size: 100% 100%;
   background-repeat: no-repeat;
   height: 230px;
