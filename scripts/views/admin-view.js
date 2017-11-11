@@ -14,41 +14,25 @@ var __API_URL__ = 'http://localhost:3000';
 const adminView = {};
 
 
-adminView.initAdminPage = function(ctx){
-
-
+adminView.initAdminPage = function(ctx, next){
   resetView();
   $('.admin-view').show();
-
   $('#admin-form').on('submit', function(event){
-
-
     event.preventDefault();
     let token = event.target.passphrase.value;
     if(token === localStorage.token){
       let currentBook = ctx.params.book_id;
-      app.bookView.initUpdateFormPage(ctx);
-
+      next();
     }else{
       page('/');
     }
-
-
-
-
-
-
   })
-
-
-
-
 }
 
 
 adminView.verify = function(ctx, next){
-if(!localStorage.token){ alert('no token')
-}else{ alert('token');
+if(!localStorage.token){
+}else{
 next();
 
 }

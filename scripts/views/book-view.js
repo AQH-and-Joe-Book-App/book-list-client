@@ -53,11 +53,10 @@ bookView.initIndexPage = function(ctx) {
 
 
     bookView.initUpdateFormPage = function(ctx) {
-      console.log('init update form page');
-      console.log(ctx);
       resetView();
       $('.update-view').show();
-      $('#update-form').on('submit', function(event){
+
+      $('#update-form').off().on('submit', function(event){
         event.preventDefault();
 
         let book = {
@@ -68,10 +67,18 @@ bookView.initIndexPage = function(ctx) {
           description: event.target.description.value,
 
         };
+
           module.Book.update(ctx,book);
+
+
+
+
       })
 
     }
+
+
+
 
 
 module.bookView = bookView;
